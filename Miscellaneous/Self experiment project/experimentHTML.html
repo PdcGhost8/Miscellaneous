@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Page Title</title>
+<style>
+body {
+    background-color:skyblue;
+}
+
+h1 {
+    color: white;
+    margin-left: 40px;
+} 
+p {
+	color: red;
+}
+</style>
+<script>
+var textShown =" it worked ";
+
+function variable()
+{
+	document.getElementById("demo").innerHTML = textShown;
+	}
+function myFunction()
+{	
+	  document.getElementById("frm1").submit();
+	  
+	}
+</script>
+</head>
+<body>
+
+<p id="demo"></p>
+<h1>this a sample program</h1>
+<p>hello world, so what would you want me to do?</p>
+<button type="button"  onclick="variable()">click me</button>
+
+<h1>referencing server</h1>
+<form id="frm1" action="http://localhost/dashboard/experimentPHP.php" method="post"> <!--action="form_action.asp"> -->
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  ID: <input type="text" name="lid"><br>
+  password: <input type="text" name="lpass"><br>
+  Date: <input type="text" name="ldate"><br>
+  total hours:<input type="int" name="lhour"><br>
+  job:<input type="text" name="ljob"><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+ 
+<!-- make a database-->
+<!--make a supervisor check page-->
+
+<form action="">
+<!-- calcualate hours used-->
+<input type="checkbox" name="vehicle" value="Bike">aprove of payment?<br>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+project goals
+
+need
+emplyee name
+date
+total hours 
+
+entered into a server
+create a database to be stored
+be able to have supervisor approve
